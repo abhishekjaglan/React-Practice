@@ -5,6 +5,7 @@ import SignUp from './pages/SignUp'
 import TransactionHistory from './pages/TransactionHistory'
 import AccountInfo from './pages/AccountInfo'
 import UserInfo from './pages/UserInfo'
+import Landing from './pages/Landing'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Landing/>}/>
+          <Route path='/home' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/transactionhistory' element={<TransactionHistory/>}/>
